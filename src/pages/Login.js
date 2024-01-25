@@ -36,7 +36,7 @@ const Login = () => {
         }
         toast.success(response.data);
         setIsLoggedIn(true);
-        navigate('/');
+        navigate('/account');
       }
       catch (error) {
         toast.error(error.response.data.message);
@@ -47,7 +47,7 @@ const Login = () => {
         const { firstName, lastName, email, password } = form;
         const response = await axios.post('http://localhost:5000/signUp', { firstName, lastName, email, password });
         toast.success(response.data);
-        navigate('/')
+        navigate('/account')
       }
       catch (error) {
         toast.error(error.response.data.message);
