@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Bookstore Management App
+The Bookstore Management App is a web-based platform that allows users to create, update, read, and delete books. Users can also browse and search for books by various criteria. The app uses JWT for user authentication and authorization.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies Used
+Backend: Node.js, Express.js, MongoDB
+Frontend: ReactJS, TailwindCSS
+## Features
+- User registration and login system
+- Dashboard to view and manage books
+- CRUD operations for books
+- Books browsing and search functionality
+- Edit user profile information
+## Usage
+- Clone the repository.
+- Install the dependencies using `npm install` in the root folder.
+- Create a `.env` file in the root folder and provide the necessary environment variables (e.g., MongoDB connection string, JWT secret key).
+- Start the server by running `npm start` in the root folder.
+- Navigate to the frontend directory (`client`) and run `npm install` to install frontend dependencies.
+- Start the frontend development server by running `npm start` in the `client` directory.
+- Access the application in your browser at http://localhost:3000.
+## User Interface
+- Landing Page: Users can either login or register to access the application.
+- Dashboard: Once logged in, users are directed to the dashboard, where they can view and manage their books.
+- Books Page: Users can create, update, read, and delete books. They can also browse and search for books by various criteria.
+- Profile Page: Users can edit their profile information and change their password.
+## Dependencies
+The main dependencies used in this project are:
 
-## Available Scripts
+- Express.js
+- ReactJS
+- MongoDB
+- TailwindCSS
+- JWT
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For a complete list of dependencies, please refer to the `package.json` files in the root and `client` directories.
