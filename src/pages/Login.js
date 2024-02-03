@@ -1,12 +1,12 @@
-import React, { useState,useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import Logo from '../assets/login_page.svg'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import {AuthContext} from '../context/AuthContext'
+import { AuthContext } from '../context/AuthContext'
 const Login = () => {
   const navigate = useNavigate();
-  const {isLoggedIn,setIsLoggedIn}=useContext(AuthContext);
+  const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
   const [form, setForm] = useState({
     firstName: '',
     lastName: '',
@@ -29,8 +29,8 @@ const Login = () => {
     if (Login === true) {
       try {
         const { email, password } = form;
-        console.log(email,password);
-        const response = await axios.post('http://localhost:5000/login', { email, password },{withCredentials:true});
+        console.log(email, password);
+        const response = await axios.post('http://localhost:5000/login', { email, password }, { withCredentials: true });
         if (response.data.token) {
           localStorage.setItem('token', response.data.token);
         }
@@ -54,7 +54,7 @@ const Login = () => {
       }
     }
   }
-  
+
   return (
     <div className='grid grid-cols-12'>
       <div className='col-span-12 sm:col-span-4'>
@@ -94,7 +94,7 @@ const Login = () => {
             }
           </div>
 
-          <button type="submit"  onClick={handleSubmit} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" >{Login === true ? "Login to your existing account" : "Register new Account"}</button>
+          <button type="submit" onClick={handleSubmit} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" >{Login === true ? "Login to your existing account" : "Register new Account"}</button>
         </form>
       </div>
       <div className='col-span-8 hidden sm:block '>
